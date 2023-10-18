@@ -1,8 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Header from "../component/layout/Header";
 
 export const metadata: Metadata = {
   title: "니가사라",
@@ -15,8 +13,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="ko">
+      <body className=" bg-white">
+        <Header />
+        <main className="mt-[50px] mx-auto relative max-w-[1280px] w-full min-h-screen md:mt-[80px]">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
