@@ -8,7 +8,7 @@ export default function Header() {
   const [isSlide, setIsSlide] = useState(false);
 
   return (
-    <header className="fixed top-0 w-full z-10 border-b-[1px]  ">
+    <header className="fixed top-0 w-full z-10 border-b-[1px]  bg-white border-primary">
       {/* 검은색 배경 */}
       {isSlide && (
         <div
