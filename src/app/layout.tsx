@@ -2,6 +2,9 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Header from "../components/layout/Header";
 import ReduxContextProvider from "@/context/reduxContext";
+// import { config } from "@fortawesome/fontawesome-svg-core";
+// import "@fortawesome/fontawesome-svg-core/styles.css";
+// config.autoAddCss = false;
 
 export const metadata: Metadata = {
   title: "니가사라",
